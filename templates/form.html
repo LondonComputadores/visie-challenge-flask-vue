@@ -1,0 +1,19 @@
+
+{% block content %}
+<table class="table">            
+    {% for item in items %}
+        %s   
+    {% endfor %}
+</table>
+    <div class="form">
+        <form action="/action_page.php">
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">RG:</label><br>
+        <input type="text" id="lname" name="lname" value="123"><br>
+        <label for="lname">CPF:</label><br>
+        <input type="text" id="lname" name="lname" value="123456"><br><br>
+        <input type="submit" value="Salvar">
+        </form>
+    </div>
+{% endblock %}
